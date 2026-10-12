@@ -37,6 +37,8 @@ async function getWeather(location: string): Promise<City | undefined> {
         // Actual data
         const data = await response.json();
 
+        console.log(data);
+
         return processWeather(data);
 
     } catch (e) {
@@ -62,9 +64,9 @@ function processWeather(weatherData: any): City {
     const city: City = {
         cityName: weatherData.resolvedAddress,
         currentWeather: weatherData.currentConditions.temp,
-        feelsLike: weatherData.currentConditions.feelsLike,
+        feelsLike: weatherData.currentConditions.feelslike,
         conditions: weatherData.currentConditions.conditions,
-        precip: weatherData.currentConditions.feelsLike,
+        precip: weatherData.currentConditions.precip,
         humidity: weatherData.currentConditions.humidity,
         days: forecasts
     };

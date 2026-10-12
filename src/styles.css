@@ -1,4 +1,53 @@
+/* Standard top-to-bottom */
+.gradient-vertical {
+    background: linear-gradient(blue, purple);
+  }
+  
+  /* Left-to-right */
+  .gradient-horizontal {
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+  }
+  
+  /* Diagonal angle */
+  .gradient-angled {
+    background: linear-gradient(45deg, red, blue);
+  }
 
+
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(0, 0, 100), rgb(70, 0, 140));
+}
+
+.content {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/*  Left   */
+.get-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/*  BOTTOM LEFT  */
 .form-row {
     display: flex;
     align-items: center;
@@ -9,31 +58,96 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 5rem;
+    height: 5rem;
     padding: 8px;
     border: none;
     border-radius: 8px;
-    background-color: #2563eb;
+    background: rgb(50, 50, 50);
     cursor: pointer;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, .2);
 }
 
 #enter svg {
-    width: 24px;
-    height: 24px;
+    width: 3rem;
+    height: 3rem;
     fill: white;
 }
 
 #enter:hover {
-    background-color: #1d4ed8;
+    background-color: rgb(55, 55, 55);
+    box-shadow: none;
+}
+
+
+/*  TOP LEFT  */
+.weather-app{
+    font-size: 5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.weather-app > .text {
+    display: flex;
+    align-items: center;
 }
 
 #cityName {
-    padding: 10px;
+    height: 8rem;
+    width: 30rem;
+    color: black;
+    font-size: 2.25rem;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 4rem;
+    padding: 0rem 1.5rem;
 }
 
 #cloud{
-    width: 1rem;
+    width: 8rem;
+    fill: white;
+}
+
+.choose{
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/*  RIGHT   */
+.info-display{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    justify-content: center;
+}
+
+.selections{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.reponse{
+    text-align: right;
+}
+
+#toggle-measurement{
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 16px;
+    padding: .5rem;
+    box-shadow: 3px 2px 3px rgba(0, 0, 0, .2);
+}
+
+#toggle-measurement:active{
+    background-color: black;
+    color: white;
+    box-shadow: none;
+}
+.sep {
+    justify-content: center;
 }
