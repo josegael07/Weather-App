@@ -1,0 +1,39 @@
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#enter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    cursor: pointer;
+}
+
+#enter svg {
+    width: 24px;
+    height: 24px;
+    fill: white;
+}
+
+#enter:hover {
+    background-color: #1d4ed8;
+}
+
+#cityName {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#cloud{
+    width: 1rem;
+}
