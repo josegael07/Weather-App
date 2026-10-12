@@ -8,6 +8,7 @@
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "esnext",
+    "moduleResolution": "bundler",
     "target": "esnext",
     "types": [],
     // For nodejs:
@@ -17,8 +18,8 @@
 
     // Other Outputs
     "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
+    "declaration": false,
+    "declarationMap": false,
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
